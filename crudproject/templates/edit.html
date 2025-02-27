@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>edit</title>
+</head>
+<body>
+    <div class="container2">
+     <form action="" method="POST">
+        {% csrf_token %}
+        {% if editss %}
+            <input type="text" name="name" id="name" placeholder="Edit Name" value="{{editss.Name}}">
+            <input type="text" name="task" id="task" placeholder="Edit Task" value="{{editss.Task}}">
+            <button type="submit">Save</button>
+        {% endif %}
+     </form>
+    </div>
+</body>
+</html>
