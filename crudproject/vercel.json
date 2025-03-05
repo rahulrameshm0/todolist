@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "builds": [
+    "join": [
       {
         "src": "manage.py",
         "use": "@vercel/python"
