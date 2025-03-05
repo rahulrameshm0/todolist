@@ -3,7 +3,7 @@ from .models import Task
 # Create your views here.
 
 def home(request):
-    a = Task.objects.all
+    a = Task.objects.all()
     return render(request,'home.html',{'as':a})
 
 def form(request):
